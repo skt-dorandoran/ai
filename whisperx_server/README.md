@@ -42,6 +42,9 @@ pip install -r requirements.txt
 nvidia-smi
 ```
 
+설치된 Pytorch 및 관련 라이브러리를 제거합니다.
+`pip uninstall -y torch torchaudio torchvision`
+
 - CUDA 추천 버전: 13.0
 - Pytorch 추천 버전: 12.1
 - 해당 조건에서는 CUDA와 Pytorch 버전이 상이해도 작동합니다.
