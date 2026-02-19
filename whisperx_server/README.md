@@ -27,7 +27,15 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-### 3. PyTorch 설치 (CUDA 버전에 맞게)
+### 3. 나머지 패키지 설치
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. PyTorch 설치 (CUDA 버전에 맞게)
+
+**반드시 requirements.txt를 설치한 뒤에 Torch를 설치해야 합니다!**
 
 먼저 본인 CUDA 버전을 확인합니다:
 ```bash
@@ -36,7 +44,7 @@ nvidia-smi
 
 - CUDA 추천 버전: 13.0
 - Pytorch 추천 버전: 12.1
-- CUDA와 Pytorch 버전이 상이해도 작동합니다.
+- 해당 조건에서는 CUDA와 Pytorch 버전이 상이해도 작동합니다.
 
 | CUDA 버전 | 설치 명령어 |
 |---|---|
@@ -45,12 +53,6 @@ nvidia-smi
 | 11.8 | `pip install torch torchaudio torchvision --index-url https://download.pytorch.org/whl/cu118` |
 
 > CUDA가 없는 경우: `pip install torch torchaudio` (CPU 모드로 실행, 속도 매우 느림)
-
-### 4. 나머지 패키지 설치
-
-```bash
-pip install -r requirements.txt
-```
 
 ---
 
