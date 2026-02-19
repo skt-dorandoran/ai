@@ -1,0 +1,8 @@
+# PyTorch with CUDA는 별도 설치 필요 (CUDA 버전에 맞게 선택)
+# pip install torch torchaudio torchvision --index-url https://download.pytorch.org/whl/cu121
+
+whisperx
+fastapi
+uvicorn[standard]
+python-multipart
+tzdata
